@@ -18,7 +18,7 @@ def gaussian_kernel(x=20, sigma=4):
     -------
     gauss : ndarray
         Contains the values of the 2D Gaussian normalized
-        to sum to 1
+        to sum to 1.
     """
 
     im = np.meshgrid(range(-x//2, x//2), range(-x//2, x//2))
