@@ -1,5 +1,7 @@
 from setuptools import setup
 import os.path as op
+from setuptools_scm import get_version
+
 
 def local_version(version):
     """
