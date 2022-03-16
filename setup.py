@@ -1,4 +1,5 @@
 from setuptools import setup
+import string
 import os.path as op
 from setuptools_scm import get_version
 
