@@ -1,1 +1,4 @@
 .DS_Store
+dist/
+ndslib.egg-info/
+ndslib/__pycache__/
