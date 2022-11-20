@@ -3,6 +3,7 @@ import numpy as np
 import requests
 import shutil
 import tempfile
+import os
 import os.path as op
 import pandas as pd
 import nibabel as nib
@@ -101,8 +102,10 @@ def download_file(url, fname):
     fname : str
         The local filename to save to.
     """
+    path, fname = op.split(fname)
+    os.makedirs(path, exist_ok=True)
     response = requests.get(url, stream=True)
-    with open(fname, 'wb') as f:
+    with open(op.join(path, fname), 'wb') as f:
         shutil.copyfileobj(response.raw, f)
 
 
