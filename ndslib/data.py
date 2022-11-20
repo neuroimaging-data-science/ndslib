@@ -1,5 +1,6 @@
 
 import numpy as np
+import json
 import requests
 import shutil
 import tempfile
@@ -108,6 +109,50 @@ def download_file(url, fname):
     with open(op.join(path, fname), 'wb') as f:
         shutil.copyfileobj(response.raw, f)
 
+
+def make_description(path, fname='dataset_description.json',
+                     BIDSVersion="1.4.0", **kwargs):
+    """Creates a BIDS-compatible dataset description file.
+
+    Parameters
+    ----------
+
+    path : str
+        Location of the BIDS dataset.
+
+    fname : str, optional
+        Name of the description file (default: `'dataset_description.json'`).
+
+    BIDSVersion : str, optional
+        Choose the version of BIDS to which this dataset complies.
+
+    **kwargs : dict, optional
+        Other fields to put in the file.
+    """
+    kwargs["Name"] = kwargs.get("Name", path)
+    kwargs.update({"BIDSVersion": BIDSVersion})
+    desc_file = op.join(path, fname)
+    with open(desc_file, 'w') as outfile:
+        json.dump(kwargs, outfile)
+
+
+def download_bids_dataset():
+    """
+    Makes a minimal BIDS dataset with one fMRI subject from OpenNeuro ds001233
+    """
+    download_file("https://openneuro.org/crn/datasets/ds001233/snapshots/00003/files/sub-17:ses-pre:func:sub-17_ses-pre_task-cuedSFM_run-01_bold.nii.gz",
+                "ds001233/sub-17/ses-pre/func/sub-17_ses-pre_task-cuedSFM_run-01_bold.nii.gz")
+
+    download_file("https://openneuro.org/crn/datasets/ds001233/snapshots/00003/files/task-cuedSFM_bold.json",
+                "ds001233/sub-17/ses-pre/func/sub-17_ses-pre_task-cuedSFM_run-01_bold.json")
+
+    download_file("https://openneuro.org/crn/datasets/ds001233/snapshots/00003/files/sub-17:ses-pre:anat:sub-17_ses-pre_T1w.nii.gz",
+                "ds001233/sub-17/ses-pre/anat/sub-17_ses-pre_T1w.nii.gz")
+
+    download_file("https://openneuro.org/crn/datasets/ds001233/snapshots/00003/files/sub-17:ses-pre:anat:sub-17_ses-pre_T1w.json",
+                "ds001233/sub-17/ses-pre/anat/sub-17_ses-pre_T1w.json")
+
+    make_description("ds001233")
 
 def load_npy(url, fname=None):
     """
