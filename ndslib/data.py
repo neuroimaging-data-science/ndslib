@@ -152,7 +152,14 @@ def download_bids_dataset():
     download_file("https://openneuro.org/crn/datasets/ds001233/snapshots/00003/files/sub-17:ses-pre:anat:sub-17_ses-pre_T1w.json",
                 "ds001233/sub-17/ses-pre/anat/sub-17_ses-pre_T1w.json")
 
-    make_description("ds001233")
+    make_description("ds001233",
+                    BIDSVersion="1.0.2",
+                     **{"Name":"singleFingerRSA",
+                        "Authors":["Patrick Beukema","Timothy Verstynen"],
+                        "Funding":["NSF Career Award 1351748, Pennsylvania Department of Health Formula Award SAP4100062201, Multimodal Neuroimaging Training Program NIH T90 DA022761"],
+                        "License":"Creative Commons CC0 1.0",
+                        "HowToAcknowledge":"Please cite the following manuscript Patrick Beukema, Jörn Diedrichsen, Timothy Verstynen. bioRxiv 255794; doi: https://doi.org/10.1101/255794 in addition to this dataset"})
+
 
 def load_npy(url, fname=None):
     """
