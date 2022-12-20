@@ -11,6 +11,9 @@ Welcome to ndslib's documentation!
    :caption: Contents:
 
 
+`API Documentation <api.html>`_
+-------------------------------
+
 
 Indices and tables
 ==================
