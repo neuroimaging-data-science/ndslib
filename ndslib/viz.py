@@ -763,25 +763,32 @@ def plot_cv_tri():
 
 def plot_learning_curves(estimators, X_sets, y, train_sizes, labels=None,
                          errors=True, **kwargs):
-    ''' Generate multi-panel plot displaying learning curves for multiple
-    predictor sets and/or estimators.
+    '''
+    Generate multi-panel plot displaying learning curves for multiple predictor
+    sets and/or estimators.
 
-    Args:
-        estimators (Estimator, list): A scikit-learn Estimator or list of
-            estimators. If a list is provided, it must have the same number of
-            elements as X_sets.
-        X_sets (NDArray-like, list): An NDArray or similar object, or list. If
-            a list is passed, it must have the same number of elements as
-            estimators.
-        y (NDArray): a 1-D numpy array (or pandas Series) representing the
-            outcome variable to predict.
-        train_sizes (list): List of ints providing the sample sizes at which to
-            evaluate the estimator.
-        labels (list): Optional list of labels for the panels. Must have the
-            same number of elements as X_sets.
-        errors (bool): If True, plots error bars representing 1 StDev.
-        kwargs (dict): Optional keyword arguments passed on to sklearn's
-            `learning_curve` utility.
+    Parameters
+    ----------
+    estimators : list,
+        A scikit-learn Estimator or list of estimators. If a list is provided,
+        it must have the same number of elements as X_sets.
+    X_sets : list,
+        An NDArray or similar object, or list. If a list is passed, it must
+        have the same number of elements as estimators.
+    y : ndarray
+        A 1-D numpy array (or pandas Series) representing the outcome variable
+        to predict.
+    train_sizes : list
+        List of ints providing the sample sizes at which to evaluate the
+        estimator.
+    labels : list, optional.
+        List of labels for the panels. Must have the same number of elements as
+        X_sets.
+    errors : bool, optional.
+         If True, plots error bars representing 1 StDev. Default: True.
+    kwargs : dict, optional
+        Optional keyword arguments passed on to sklearn's `learning_curve`
+        utility.
     '''
     # Set up figure
     n_col = len(X_sets)

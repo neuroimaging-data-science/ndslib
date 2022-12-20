@@ -19,4 +19,4 @@ by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
    api
 
 `Function reference <api.html>`_
--------------------------------
+---------------------------------
