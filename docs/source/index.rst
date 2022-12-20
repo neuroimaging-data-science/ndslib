@@ -10,13 +10,22 @@ This software is companion to the book "Neuroimaging and Data Science"
 by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
 `https://neuroimaging-data-science.org <https://neuroimaging-data-science.org>`_.
 
+These are the functions available through the software:
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Contents:
+.. autofunction:: ndslib.data.load_data
 
-   api
+.. autofunction:: ndslib.data.download_bids_dataset
 
-`Function reference <api.html>`_
----------------------------------
+.. autofunction:: ndslib.viz.imshow_with_annot
+
+.. autofunction:: ndslib.viz.plot_diffeomorphic_map
+
+.. autofunction:: ndslib.viz.plot_coef_path
+
+.. autofunction:: ndslib.viz.plot_train_test
+
+.. autofunction:: ndslib.viz.plot_learning_curves
+
+.. autofunction:: ndslib.viz.plot_graphviz_tree
+
+.. autofunction:: ndslib.image.gaussian_kernel

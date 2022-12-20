@@ -329,6 +329,7 @@ def plot_diffeomorphic_map(mapping, ax, delta=15,
     regular grid. The resulting figure contains two images: the direct
     transformation is plotted to the left, and the inverse transformation is
     plotted to the right.
+
     Parameters
     ----------
     mapping : DiffeomorphicMap object
@@ -370,6 +371,7 @@ def plot_diffeomorphic_map(mapping, ax, delta=15,
         if True (default), the deformed grids will be plotted using matplotlib,
         else the grids are just returned
     fig_kwargs: extra parameters for saving figure, e.g. `dpi=300`.
+
     Returns
     -------
     warped_forward : array
@@ -380,6 +382,7 @@ def plot_diffeomorphic_map(mapping, ax, delta=15,
         Image with the grid showing the effect of transforming the static image to
         the moving image.  Shape will be `inverse_grid_shape` if specified,
         otherwise the shape of the moving image.
+
     Notes
     ------
     The default value for the affine transformation is "-1" to handle the case
