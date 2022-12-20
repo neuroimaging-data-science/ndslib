@@ -18,20 +18,6 @@
    :toctree: generated/
    :template: function.rst
 
-   ndslib.image.gaussian_kernel
-
-
-.. autosummary::
-   :toctree: generated/
-   :template: function.rst
-
-   ndslib.image.gaussian_kernel
-
-
-.. autosummary::
-   :toctree: generated/
-   :template: function.rst
-
    ndslib.viz.imshow_with_annot
 
 .. autosummary::
@@ -63,3 +49,9 @@
    :template: function.rst
 
    ndslib.viz.plot_graphviz_tree
+
+.. autosummary::
+   :toctree: generated/
+   :template: function.rst
+
+   ndslib.image.gaussian_kernel
