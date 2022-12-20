@@ -1,6 +1,6 @@
 ##############################
 ``ndslib`` function reference
-#############################
+##############################
 
 .. autosummary::
    :toctree: generated/
@@ -56,7 +56,7 @@
    :toctree: generated/
    :template: function.rst
 
-   ndslib.viz.plot_learning_curve
+   ndslib.viz.plot_learning_curves
 
 .. autosummary::
    :toctree: generated/

@@ -13,8 +13,10 @@ by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Contents:
 
+   api
 
-`API Documentation <api.html>`_
+`Function reference <api.html>`_
 -------------------------------
