@@ -27,7 +27,7 @@ opts = dict(
         "write_to": op.join("ndslib", "version.py"),
         "local_scheme": local_version},
     package_data={'ndslib': [op.join('templates', '*')]}
-                     )
+    )
 
 
 if __name__ == '__main__':
