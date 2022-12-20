@@ -18,11 +18,3 @@ by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
 
 `API Documentation <api.html>`_
 -------------------------------
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
