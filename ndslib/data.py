@@ -34,14 +34,19 @@ def load_data(dataset, fname=None):
     Parameters
     ----------
     dataset : str
-        The name of a dataset. Can be one of:
-        "bold_numpy" : Read a BOLD time-series as a numpy array.
-        "bold_volume" : Read a single volume of a BOLD time-series
-                        a numpy array
-        "afq" : Read AFQ data
-        "age_groups_fa" : Read AFQ data and return dataframe divided
-                          by age-groups
-        "abide2_saggitals": Read ABIDE2 mid-saggitals as numpy arrays.
+        The name of a dataset. Can be one of::
+
+            "bold_numpy" : Read a BOLD time-series as a numpy array.
+
+            "bold_volume" : Read a single volume of a BOLD time-series
+                            a numpy array
+
+            "afq" : Read AFQ data
+
+            "age_groups_fa" : Read AFQ data and return dataframe divided
+                              by age-groups
+
+            "abide2_saggitals": Read ABIDE2 mid-saggitals as numpy arrays.
 
     fname : str, optional.
         If provided, data will be cached to this local path and retrieved
