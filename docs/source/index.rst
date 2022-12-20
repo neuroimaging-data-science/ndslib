@@ -3,8 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ndslib's documentation!
-==================================
+`ndslib`
+========
+
+This software is companion to the book "Neuroimaging and Data Science"
+by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
+`https://neuroimaging-data-science.org <https://neuroimaging-data-science.org>`_.
+
 
 .. toctree::
    :maxdepth: 2
