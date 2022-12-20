@@ -2,3 +2,4 @@
 dist/
 ndslib.egg-info/
 ndslib/__pycache__/
+ndslib/version.py
