@@ -104,7 +104,8 @@ def download_file(url, fname):
         The local filename to save to.
     """
     path, fname = op.split(fname)
-    os.makedirs(path, exist_ok=True)
+    if len(path):
+        os.makedirs(path, exist_ok=True)
     response = requests.get(url, stream=True)
     with open(op.join(path, fname), 'wb') as f:
         shutil.copyfileobj(response.raw, f)
