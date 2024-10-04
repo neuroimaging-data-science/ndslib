@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ndslib &mdash; ndslib  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -28,11 +27,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> ndslib
+
+          
+          
+          <a href="#" class="icon icon-home">
+            ndslib
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -67,7 +70,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a></li>
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active"><cite>ndslib</cite></li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
@@ -79,17 +82,17 @@
            <div itemprop="articleBody">
              
   <section id="ndslib">
-<h1><cite>ndslib</cite><a class="headerlink" href="#ndslib" title="Permalink to this heading">¶</a></h1>
+<h1><cite>ndslib</cite><a class="headerlink" href="#ndslib" title="Link to this heading">¶</a></h1>
 <p>This software is companion to the book “Neuroimaging and Data Science”
 by Ariel Rokem and Tal Yarkoni. An online version of the book can be found at
 <a class="reference external" href="https://neuroimaging-data-science.org">https://neuroimaging-data-science.org</a>.</p>
 <p>These are the functions available through the software:</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.data.load_data">
-<span class="sig-prename descclassname"><span class="pre">ndslib.data.</span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.data.load_data" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.data.</span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.data.load_data" title="Link to this definition">¶</a></dt>
 <dd><p>Load data for use in examples</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>dataset</strong><span class="classifier">str</span></dt><dd><p>The name of a dataset. Can be one of:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;bold_numpy&quot;</span> <span class="p">:</span> <span class="n">Read</span> <span class="n">a</span> <span class="n">BOLD</span> <span class="n">time</span><span class="o">-</span><span class="n">series</span> <span class="k">as</span> <span class="n">a</span> <span class="n">numpy</span> <span class="n">array</span><span class="o">.</span>
@@ -116,16 +119,16 @@ from there on future calls with the same value.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.data.download_bids_dataset">
-<span class="sig-prename descclassname"><span class="pre">ndslib.data.</span></span><span class="sig-name descname"><span class="pre">download_bids_dataset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.data.download_bids_dataset" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.data.</span></span><span class="sig-name descname"><span class="pre">download_bids_dataset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.data.download_bids_dataset" title="Link to this definition">¶</a></dt>
 <dd><p>Makes a minimal BIDS dataset with one fMRI subject from OpenNeuro ds001233</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.imshow_with_annot">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">imshow_with_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">im</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.imshow_with_annot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">imshow_with_annot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">im</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.imshow_with_annot" title="Link to this definition">¶</a></dt>
 <dd><p>Like imshow, but with added annotation of the array values</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>im</strong><span class="classifier">numpy array object</span></dt><dd></dd>
 </dl>
@@ -135,14 +138,14 @@ from there on future calls with the same value.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.plot_diffeomorphic_map">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_diffeomorphic_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direct_grid_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direct_grid2world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_grid_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_grid2world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_figure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fig_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_diffeomorphic_map" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_diffeomorphic_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direct_grid_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direct_grid2world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_grid_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inverse_grid2world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_figure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fig_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_diffeomorphic_map" title="Link to this definition">¶</a></dt>
 <dd><p>Draw the effect of warping a regular lattice by a diffeomorphic map.
 Draws a diffeomorphic map by showing the effect of the deformation on a
 regular grid. The resulting figure contains two images: the direct
 transformation is plotted to the left, and the inverse transformation is
 plotted to the right.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>mapping</strong><span class="classifier">DiffeomorphicMap object</span></dt><dd><p>the diffeomorphic map to be drawn</p>
 </dd>
@@ -185,7 +188,7 @@ else the grids are just returned</p>
 <dt><strong>fig_kwargs: extra parameters for saving figure, e.g. `dpi=300`.</strong></dt><dd></dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>warped_forward</strong><span class="classifier">array</span></dt><dd><p>Image with the grid showing the effect of transforming the moving image to
 the static image.  The shape will be <cite>direct_grid_shape</cite> if specified,
@@ -208,10 +211,10 @@ meaning to use the appropriate default matrix.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.plot_coef_path">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_coef_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_coef_path" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_coef_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_coef_path" title="Link to this definition">¶</a></dt>
 <dd><p>Plot the coefficient path for a sklearn estimator</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>estimator</strong><span class="classifier">sklearn estimator</span></dt><dd><p>For example <cite>Lasso()</cite></p>
 </dd>
@@ -221,7 +224,7 @@ meaning to use the appropriate default matrix.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>ax</strong><span class="classifier">MPL Axes object</span></dt><dd></dd>
 </dl>
@@ -231,10 +234,10 @@ meaning to use the appropriate default matrix.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.plot_train_test">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_train_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hlines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_train_test" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_train_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hlines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_train_test" title="Link to this definition">¶</a></dt>
 <dd><p>Plot train/test <span class="math notranslate nohighlight">\(R^2\)</span></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>x_range</strong><span class="classifier">sequence</span></dt><dd><p>The range of x values used (e.g., number of features, number of samples)</p>
 </dd>
@@ -248,7 +251,7 @@ meaning to use the appropriate default matrix.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>ax</strong><span class="classifier">MPL Axes object.</span></dt><dd></dd>
 </dl>
@@ -258,11 +261,11 @@ meaning to use the appropriate default matrix.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.plot_learning_curves">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_learning_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimators</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_sets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_sizes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_learning_curves" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_learning_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimators</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_sets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_sizes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_learning_curves" title="Link to this definition">¶</a></dt>
 <dd><p>Generate multi-panel plot displaying learning curves for multiple predictor
 sets and/or estimators.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>estimators</strong><span class="classifier">list,</span></dt><dd><p>A scikit-learn Estimator or list of estimators. If a list is provided,
 it must have the same number of elements as X_sets.</p>
@@ -291,12 +294,12 @@ utility.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.viz.plot_graphviz_tree">
-<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_graphviz_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_graphviz_tree" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.viz.</span></span><span class="sig-name descname"><span class="pre">plot_graphviz_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.viz.plot_graphviz_tree" title="Link to this definition">¶</a></dt>
 <dd><p>Helper function that takes a tree as input, calls sklearn’s export_graphviz
 function to generate an image of the tree using graphviz, and then
 plots the result in-line.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>tree: sklearn tree object</strong></dt><dd></dd>
 <dt><strong>feature_names</strong><span class="classifier">sequence of strings</span></dt><dd></dd>
@@ -307,10 +310,10 @@ plots the result in-line.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ndslib.image.gaussian_kernel">
-<span class="sig-prename descclassname"><span class="pre">ndslib.image.</span></span><span class="sig-name descname"><span class="pre">gaussian_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.image.gaussian_kernel" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ndslib.image.</span></span><span class="sig-name descname"><span class="pre">gaussian_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ndslib.image.gaussian_kernel" title="Link to this definition">¶</a></dt>
 <dd><p>Construct a 2D Gaussian kernel for image processing</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>x</strong><span class="classifier">int, optional</span></dt><dd><p>The number of pixels on a side for the filter.
 Default : 20</p>
@@ -320,7 +323,7 @@ Default : 4</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>gauss</strong><span class="classifier">ndarray</span></dt><dd><p>Contains the values of the 2D Gaussian normalized
 to sum to 1.</p>
