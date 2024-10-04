@@ -104,18 +104,16 @@ def draw_arrays():
 
 
 class Arrow3D(FancyArrowPatch):
-    """
-    Class for drawing arrows in 3D
-    """
     def __init__(self, xs, ys, zs, *args, **kwargs):
-        FancyArrowPatch.__init__(self, (0,0), (0,0), *args, **kwargs)
+        super().__init__((0,0), (0,0), *args, **kwargs)
         self._verts3d = xs, ys, zs
 
-    def draw(self, renderer):
+    def do_3d_projection(self, renderer=None):
         xs3d, ys3d, zs3d = self._verts3d
         xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, self.axes.M)
-        self.set_positions((xs[0], ys[0]),(xs[1], ys[1]))
-        FancyArrowPatch.draw(self, renderer)
+        self.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+
+        return np.min(zs)
 
 
 def draw_array_with_bytes(bytes=None):
